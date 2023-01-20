@@ -1,0 +1,4 @@
+<div [style.background-color]="color">
+  <p>Parent component's background color</p>
+</div>
+<app-child (sendColor)="processColor($event)"></app-child>

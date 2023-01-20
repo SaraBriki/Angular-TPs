@@ -1,0 +1,13 @@
+<div [style.background-color]="color">
+  <p>Pick a color you like</p>
+</div>
+<input
+  #input
+  (change)="changeColor(input.value)"
+  type="text"
+  placeholder="Choose your unique color"
+  class="form-control color-input"
+/>
+<button class="btn btn-success color-button" (click)="reset()">
+  Reset background color
+</button>

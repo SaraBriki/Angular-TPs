@@ -1,0 +1,8 @@
+<script src="../list-item/cv-list-item.component.ts"></script>
+<script src="../cv/cv.component.ts"></script>
+<ol class="list-group">
+  <app-cv-list-item
+    *ngFor="let person of profiles"
+    [person]="person"
+  ></app-cv-list-item>
+</ol>
